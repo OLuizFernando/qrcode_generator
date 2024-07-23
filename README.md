@@ -1,2 +1,2 @@
-# qrcode_generator
- A web app that generates any QR code
+# QR Code Generator
+ An easy-to-use web tool for creating QR codes from any URL.
