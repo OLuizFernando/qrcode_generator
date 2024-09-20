@@ -9,8 +9,9 @@ document.getElementById('generate-btn').addEventListener('click', function() {
     if (url) {
         $(qrCodeContainer).qrcode({
             text: url,
-            width: 200,
-            height: 200
+            width: 180,
+            height: 180,
+            colorDark: "#ff0000"
         })
     }
 })
