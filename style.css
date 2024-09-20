@@ -10,8 +10,7 @@ html, body {
     justify-content: center;
 }
 
-.qr-code {
+.qr-code-div {
     width: 200px;
     height: 200px;
-    padding-top: 5px;
 }

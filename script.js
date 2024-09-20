@@ -1,17 +1,12 @@
-document.getElementById('generate-btn').addEventListener('click', function() {
+function generateQrCode() {
     let url = document.getElementById('url-input').value
-    let qrCodeContainer = document.getElementById('qr-code')
+    let qrCode = document.getElementById('qr-code-img')
     
     // Limpa o QR code existente
-    qrCodeContainer.innerHTML = ''
+    qrCode.src = ''
     
     // Gera o QR code
     if (url) {
-        $(qrCodeContainer).qrcode({
-            text: url,
-            width: 180,
-            height: 180,
-            colorDark: "#ff0000"
-        })
+        qrCode.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${url}`
     }
-})
+}
